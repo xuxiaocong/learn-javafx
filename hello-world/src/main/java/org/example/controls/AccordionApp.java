@@ -25,9 +25,9 @@ public class AccordionApp extends Application {
         Accordion accordion = new Accordion();
         accordion.getPanes().addAll(t1, t2, t3);
 
-        var scene = new Scene(accordion, 640, 480);
-        stage.setScene(scene);
+        var scene = new Scene(accordion, 320, 240);
         stage.setTitle("Accordion Control");
+        stage.setScene(scene);
         stage.show();
 
     }
