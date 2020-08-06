@@ -8,7 +8,7 @@ import javafx.scene.control.TitledPane;
 import javafx.stage.Stage;
 
 /**
- * 手风琴 Accordion demo
+ * 手风琴 Accordion
  */
 public class AccordionApp extends Application {
 

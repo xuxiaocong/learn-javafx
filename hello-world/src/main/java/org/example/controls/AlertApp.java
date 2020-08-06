@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.util.Optional;
 
 /**
- * 弹窗 Alert demo
+ * 弹窗 Alert
  */
 public class AlertApp extends Application {
     public static void main(String[] args) {
