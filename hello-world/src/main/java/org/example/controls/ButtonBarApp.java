@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -29,7 +30,9 @@ public class ButtonBarApp extends Application {
 
         bar.getButtons().addAll(yesButton, noButton, cancelButton);
 
-        var scene = new Scene(bar, 320, 240);
+        BorderPane root = new BorderPane();
+        root.setTop(bar);
+        var scene = new Scene(root, 320, 240);
         stage.setTitle("ButtonBar Control");
         stage.setScene(scene);
         stage.show();
