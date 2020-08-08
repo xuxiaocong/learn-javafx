@@ -5,7 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
-import javafx.scene.layout.TilePane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -30,9 +30,12 @@ public class CheckMenuApp extends Application {
         menu.getItems().add(cItem);
         MenuBar bar = new MenuBar(menu);
 
-        Scene scene = new Scene(new TilePane(bar), 320, 240);
+        BorderPane root=new BorderPane();
+        root.setTop(bar);
+        Scene scene = new Scene(root, 320, 240);
         stage.setTitle("CheckMenu Control");
         stage.setScene(scene);
         stage.show();
+
     }
 }

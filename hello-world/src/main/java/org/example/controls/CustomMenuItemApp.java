@@ -6,7 +6,7 @@ import javafx.scene.control.CustomMenuItem;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.Slider;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -27,9 +27,9 @@ public class CustomMenuItemApp extends Application {
         menu.getItems().add(menuItem);
         MenuBar bar = new MenuBar(menu);
 
-        GridPane grid = new GridPane();
-        grid.add(bar, 0, 0);
-        Scene scene = new Scene(grid, 320, 240);
+        BorderPane root=new BorderPane();
+        root.setTop(bar);
+        Scene scene = new Scene(root, 320, 240);
         stage.setScene(scene);
         stage.show();
     }
