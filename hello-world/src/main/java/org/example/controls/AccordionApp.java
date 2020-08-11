@@ -22,6 +22,7 @@ public class AccordionApp extends Application {
         TitledPane t1 = new TitledPane("T1", new Button("Button1"));
         TitledPane t2 = new TitledPane("T2", new Button("Button2"));
         TitledPane t3 = new TitledPane("T3", new Button("Button3"));
+        // 仅表示只有一个能展开
         Accordion accordion = new Accordion();
         accordion.getPanes().addAll(t1, t2, t3);
 
