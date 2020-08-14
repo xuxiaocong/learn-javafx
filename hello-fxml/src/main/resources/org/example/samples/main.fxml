@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.samples.MainController">
+    <top>
+        <MenuBar fx:id="menuBar">
+            <Menu text="fxml创建的菜单">
+                <MenuItem text="菜单项 1"></MenuItem>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox>
+            <Button fx:id="btn_1" text="代码绑定事件"/>
+            <Button text="FXML绑定事件" onAction="#handleButtonTwoAction"/>
+        </VBox>
+    </center>
+</BorderPane>

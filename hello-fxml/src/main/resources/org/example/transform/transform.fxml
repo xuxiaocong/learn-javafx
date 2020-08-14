@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.transform.TransformController"
+            prefWidth="320" prefHeight="240">
+    <top>
+        <MenuBar>
+            <Menu text="文件">
+                <MenuItem text="新建..."/>
+                <MenuItem text="打开..."/>
+            </Menu>
+            <Menu text="帮助">
+                <MenuItem text="关于我们"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox spacing="20">
+            <TextField fx:id="textField" text="看看"/>
+            <Label fx:id="label" text="文本框输入内容为:"/>
+            <Button fx:id="button" onAction="#hanldeButtonAction" text="点击"/>
+        </VBox>
+    </center>
+</BorderPane>
